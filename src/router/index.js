@@ -65,17 +65,17 @@ export const constantRoutes = [
         path: 'userList',
         name: '用户管理',
         component: () => import('@/views/customer/index'),
-        meta: { title: '用户管理', icon: 'table' }
+        meta: { title: '用户管理', icon: 'user' }
       },{
         path: 'roleList',
         name: '角色管理',
         component: () => import('@/views/customer/viewInfo'),
-        meta: { title: '角色管理', icon: 'table' },
+        meta: { title: '角色管理', icon: 'tree-table' },
       },{
         path: 'leaveUserList',
         name: '离职员工',
         component: () => import('@/views/customer/editPlan'),
-        meta: { title: '离职员工', icon: 'table' },
+        meta: { title: '离职员工', icon: 'eye' },
       }
     ]
   },
@@ -83,7 +83,7 @@ export const constantRoutes = [
     path: '/logs',
     component: Layout,
     redirect: '/logs/userList',
-    meta: { title: '日志管理', icon: 'example' },
+    meta: { title: '日志管理', icon: 'documentation' },
     name: '日志管理',
     children: [
       {
@@ -112,7 +112,7 @@ export const constantRoutes = [
         path: 'list',
         name: 'fund',
         component: () => import('@/views/table/index'),
-        meta: { title: '产品管理', icon: 'table' }
+        meta: { title: '产品管理', icon: 'list' }
       }
     ]
   },
@@ -124,7 +124,7 @@ export const constantRoutes = [
         path: 'list',
         name: '客户管理',
         component: () => import('@/views/customer/index'),
-        meta: { title: '客户管理', icon: 'table' }
+        meta: { title: '客户管理', icon: 'peoples' }
       },{
         path: 'viewInfo',
         name: '客户信息',

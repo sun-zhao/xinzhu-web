@@ -1,6 +1,6 @@
 <template>
   <div class="app-container">
-    <el-tabs v-model="tabName" type="card" @tab-click="switchCardClick">
+    <el-tabs v-model="tabName" type="card" @tab-click="switchCardClick" >
       <el-tab-pane label="债券型基金" name="bondFunds">
         <div>
           <el-table
